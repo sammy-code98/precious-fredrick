@@ -9,8 +9,7 @@ export default function HomeLayout({ children }: HomeProps): JSX.Element {
     return (
         <>
             <NavBar />
-            <Box>
-
+            <Box px={{ base: '1rem', md: '4rem' }}>
                 {children}
             </Box>
         </>
