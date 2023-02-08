@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import "@fontsource/inter"
 import { Box } from '@chakra-ui/react'
-
+import { HomeLayout } from '@/layouts'
 
 export default function Home() {
   return (
@@ -12,8 +12,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box>
+      <Box bg='primary' height='100vh'>
+        <HomeLayout>
         helloe
+
+        </HomeLayout>
       </Box>
     </>
   )
