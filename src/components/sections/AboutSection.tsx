@@ -1,5 +1,19 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box, HStack, Text } from '@chakra-ui/react'
 import React from 'react'
+const aboutCard = [
+    {
+        title: 'BRANDING',
+        description: 'I have extensive experience in digital design and can establish a strong foundation for your brand through typography, color, and photography. This ensures consistent brand perception across all digital touchpoints. Let me help you establish a powerful brand presence with my expertise'
+    },
+    {
+        title: 'WEB/MOBILE DESIGN',
+        description: 'I am a digital designer skilled in creating impactful and visually appealing experiences. I design marketing websites, e-commerce sites, and apps that benefit users and set them apart from the competition. Let me help you elevate your brand and increase conversions with my skills'
+    },
+    {
+        title: 'VISUAL DESIGN',
+        description: 'As a visual designer specializing in creating cohesive, recognizable brand identities. My designs are accessible, user-friendly, and impactful in today\'s digital world.Let me help you make a lasting impression with my skills.'
+    }
+]
 export default function AboutSection() {
     return (
         <Box mt='6rem' py='4rem'>
@@ -38,15 +52,35 @@ export default function AboutSection() {
                         md: "repeat(3, minmax(0, 1fr))",
                     }}
                     justifyItems='center'
-
-
+                    gap={8}
                 >
-                    <Box>
-                        <Text color='royalGold'>BRANDING</Text>
-                        <Text color='royalWhite' mt='0.5rem'>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic eius laudantium fuga neque. Excepturi, quibusdam animi minus, sed esse itaque explicabo illo facilis quis earum molestias accusamus quam, temporibus voluptatum!
-                        </Text>
-                    </Box>
+                    {aboutCard.map((card) => (
+                        <Box key={card.title}>
+                            <Text color='royalGold'>{card.title}</Text>
+                            <Text color='royalWhite' mt='0.5rem'>
+                                {card.description}
+                            </Text>
+                        </Box>
+
+                    ))}
+
+                </Box>
+
+            </Box>
+
+            <Box display='flex' justifyContent='space-between' alignItems='center' mt={{ base: '1rem', md: '8rem' }} flexWrap='wrap'>
+                <HStack>
+                    <Text color='royalWhite' textDecoration='underline'>BEHANCE </Text>
+                    <Text color='royalWhite' textDecoration='underline'>DRIBBLE</Text>
+                    <Text color='royalWhite' textDecoration='underline'>INSTAGRAM</Text>
+                    <Text color='royalWhite' textDecoration='underline'>LINKEDIN</Text>
+
+                </HStack>
+                <Box>
+                    <Text color='royalWhite'>02/04</Text>
+                </Box>
+                <Box>
+                    <Text color='royalWhite'>BACK TO TOP</Text>
                 </Box>
 
             </Box>
