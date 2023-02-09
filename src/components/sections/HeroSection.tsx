@@ -1,7 +1,6 @@
 import { Box, Heading, HStack, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Button } from '../utility'
-import { ArrowDownIcon } from '@chakra-ui/icons'
 
 
 export default function HeroSection() {
@@ -29,7 +28,7 @@ export default function HeroSection() {
                     <Text color='royalWhite' mt='.5rem'>
                         Hello, I am Fred a professional digital designer. I am interested in collaborating with you on your project.
                     </Text>
-                    <Box mt='2rem'>
+                    <Box mt='2rem' display='flex' justifyContent={{ base: 'center', md: 'start' }}>
                         <Button title='SCROLL TO DISCOVER' icon='icon' />
                     </Box>
                 </Box>
