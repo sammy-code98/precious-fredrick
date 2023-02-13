@@ -1,4 +1,5 @@
 import NavBar from "./NavBar";
 import Button from "./Button";
 import WorksCard from "./WorksCard";
-export { NavBar, Button, WorksCard };
+import WorksCarousel from "./WorksCarousel";
+export { NavBar, Button, WorksCard, WorksCarousel };

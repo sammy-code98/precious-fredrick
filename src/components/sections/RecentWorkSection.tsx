@@ -1,6 +1,6 @@
 import { Box, Text, Divider, Heading } from '@chakra-ui/react'
 import React from 'react'
-import { Button, WorksCard } from '../utility';
+import { Button, WorksCard, WorksCarousel } from '../utility';
 
 const RecentWork = [
     {
@@ -43,6 +43,10 @@ export default function RecentWorkSection() {
             </Box>
             <Box display='flex' justifyContent='center'>
                 <Button title='MORE OF MY WORKS' />
+            </Box>
+
+            <Box>
+                <WorksCarousel />
             </Box>
         </Box >
     )
