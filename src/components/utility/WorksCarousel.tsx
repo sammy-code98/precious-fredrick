@@ -1,6 +1,6 @@
 import React from 'react'
-import "~slick-carousel/slick/slick.css";
-import "~slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Box } from '@chakra-ui/react';
 
@@ -13,13 +13,20 @@ export default function WorksCarousel() {
         infinite: true,
         centerPadding: "60px",
         slidesToShow: 3,
-        speed: 500,
+        speed: 2000,
         rows: 2,
-        slidesPerRow: 2
+        slidesPerRow: 2,
+        nextArrow: <></>,
+        prevArrow: <></>,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        cssEase: "linear"
+
+
 
     }
     return (
-        <Box>
+        <Box py='6rem'>
             <Slider {...settings}>
                 <div>
                     <h3>1</h3>
