@@ -1,4 +1,4 @@
-import { Box, Text, Divider, Heading } from '@chakra-ui/react'
+import { Box, Text, Divider, HStack } from '@chakra-ui/react'
 import React from 'react'
 import { Button, WorksCard, WorksCarousel } from '../utility';
 
@@ -47,6 +47,20 @@ export default function RecentWorkSection() {
 
             <Box>
                 <WorksCarousel />
+                <Box display='flex' justifyContent='space-between' alignItems='center' pb='2rem' mt={{ base: '1rem', md: '8rem' }} flexWrap='wrap'>
+                    <HStack>
+                        <Text color='royalWhite' textDecoration='underline'>BEHANCE </Text>
+                        <Text color='royalWhite' textDecoration='underline'>DRIBBLE</Text>
+                        <Text color='royalWhite' textDecoration='underline'>INSTAGRAM</Text>
+                        <Text color='royalWhite' textDecoration='underline'>LINKEDIN</Text>
+                    </HStack>
+                    <Box>
+                        <Text color='royalWhite'>03/04</Text>
+                    </Box>
+                    <Box>
+                        <Text color='royalGold'>BACK TO TOP</Text>
+                    </Box>
+                </Box>
             </Box>
         </Box >
     )
