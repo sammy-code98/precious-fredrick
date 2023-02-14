@@ -2,8 +2,11 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { Box } from '@chakra-ui/react';
+import { Box, Image } from '@chakra-ui/react';
 
+const workImages = [
+    { id: 1, src: '' }
+]
 
 export default function WorksCarousel() {
 
@@ -28,56 +31,24 @@ export default function WorksCarousel() {
     return (
         <Box py='6rem'>
             <Slider {...settings}>
-                <div>
-                    <h3>1</h3>
-                </div>
-                <div>
-                    <h3>2</h3>
-                </div>
-                <div>
-                    <h3>3</h3>
-                </div>
-                <div>
-                    <h3>4</h3>
-                </div>
-                <div>
-                    <h3>5</h3>
-                </div>
-                <div>
-                    <h3>6</h3>
-                </div>
-                <div>
-                    <h3>7</h3>
-                </div>
-                <div>
-                    <h3>8</h3>
-                </div>
-                <div>
-                    <h3>9</h3>
-                </div>
-                <div>
-                    <h3>10</h3>
-                </div>
-                <div>
-                    <h3>11</h3>
-                </div>
-                <div>
-                    <h3>12</h3>
-                </div>
-                <div>
-                    <h3>13</h3>
-                </div>
-                <div>
-                    <h3>14</h3>
-                </div>
-                <div>
-                    <h3>15</h3>
-                </div>
-                <div>
-                    <h3>16</h3>
-                </div>
+                <ImageCard />
 
             </Slider>
         </Box>
     )
+}
+
+
+
+const ImageCard = () => {
+    return (
+        <Box m='1rem'>
+            <Box w='400px' h='320px' bg='secondary' p='2rem' display='flex' justifyContent='center'>
+                <Image src='https://bit.ly/dan-abramov' />
+            </Box>
+        </Box>
+
+    )
+
+
 }
