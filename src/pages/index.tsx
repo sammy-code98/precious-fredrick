@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import "@fontsource/inter"
-import { Box, Text, Center, Heading, HStack } from '@chakra-ui/react'
+import { Box, Text, Heading, HStack } from '@chakra-ui/react'
 import { HomeLayout } from '@/layouts'
 import { AboutSection, HeroSection, RecentWorkSection } from '@/components/sections'
 import { Button } from '@/components/utility'
@@ -14,7 +14,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* height='100vh' */}
       <Box bg='primary' >
         <HomeLayout>
           <Box>
