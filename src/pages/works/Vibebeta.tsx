@@ -99,7 +99,6 @@ export default function Vibebeta() {
                             <HStack>
                                 <Text color='royalWhite' textDecoration='underline'>BEHANCE </Text>
                                 <Text color='royalWhite' textDecoration='underline'>DRIBBLE</Text>
-                                <Text color='royalWhite' textDecoration='underline'>INSTAGRAM</Text>
                                 <Text color='royalWhite' textDecoration='underline'>LINKEDIN</Text>
                             </HStack>
                             <Box display='flex' gap={4} alignItems='center'>

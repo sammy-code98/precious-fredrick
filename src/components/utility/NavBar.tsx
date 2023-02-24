@@ -6,21 +6,26 @@ import {
     Link,
     IconButton,
     useDisclosure,
-    useColorModeValue,
     Stack,
 } from '@chakra-ui/react';
 import Image from "next/image"
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import Logo from "public/logo.svg"
+import { useRouter } from 'next/router'
+
 
 const Links = ['Work', 'About', 'Contact'];
 
-const NavLink = ({ children }: { children: ReactNode }) => (
-    <Link
+const NavLink = ({ children }: { children: ReactNode }) => {
+    const route = useRouter()
+    const link = "/works/AzuzaGaming"
+
+    return (
+        <Link
         px={2}
         py={1}
         rounded={'md'}
-        color='royalWhite'
+            color={route.asPath === link ? 'black' : 'royalWhite'}
         fontWeight={500}
         // _hover={{
         //     textDecoration: 'none',
@@ -29,14 +34,21 @@ const NavLink = ({ children }: { children: ReactNode }) => (
         href={'#'}>
         {children}
     </Link>
-);
+
+    )
+
+};
 
 export default function NavBar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
+    const router = useRouter()
+    const href = "/works/AzuzaGaming"
 
     return (
         <>
-            <Box bg={useColorModeValue('primary', 'primary')} px={{ base: '1rem', md: '4rem' }}>
+            <Box
+                bg={router.asPath === href ? 'secondaryGrey' : 'primary'}
+                px={{ base: '1rem', md: '4rem' }}>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <IconButton
                         variant='outline'
