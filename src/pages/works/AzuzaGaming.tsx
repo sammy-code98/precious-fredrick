@@ -86,7 +86,7 @@ export default function AzuzaGaming() {
                         </Box>
 
                     </Box>
-                    <Box mt='2rem' display='flex' alignItems='center' gap={2} flexWrap='wrap'>
+                    <Box py='1rem' mt='2rem' display='flex' alignItems='center' gap={2} flexWrap='wrap'>
                         <Image src={process1} alt='azuza' />
                         <Image src={process2} alt='azuza' />
 
