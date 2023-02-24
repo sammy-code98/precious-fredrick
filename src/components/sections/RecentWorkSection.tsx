@@ -37,7 +37,12 @@ export default function RecentWorkSection() {
                 <Divider />
                 <Box mt='3rem'>
                     {RecentWork.map((work) => (
-                        <WorksCard description={work.description} role={work.role} serviceType={work.serviceType} title={work.title} />
+                        <WorksCard
+                            key={work.title}
+                            description={work.description}
+                            role={work.role}
+                            serviceType={work.serviceType}
+                            title={work.title} />
                     ))}
                 </Box>
             </Box>

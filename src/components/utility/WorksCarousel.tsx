@@ -98,7 +98,7 @@ const ImageCard = ({ src }: ImageCardProp) => {
             <Box
                 w={{ base: '100px', md: '400px' }}
                 h={{ base: '80px', md: '320px' }}
-                bg='secondary'
+                // bg='secondary'
                 p={{ base: '.5rem', md: '2rem' }}
                 display='flex' justifyContent='center'>
                 <Image src={src} />
@@ -114,7 +114,7 @@ const SecondImageCard = ({ src }: SecondImageCardProps) => {
             <Box
                 w={{ base: '100px', md: '400px' }}
                 h={{ base: '80px', md: '320px' }}
-                bg='secondary'
+                // bg='secondary'
                 p={{ base: '.5rem', md: '2rem' }}
                 display='flex' justifyContent='center'>
                 <Image src={src} />

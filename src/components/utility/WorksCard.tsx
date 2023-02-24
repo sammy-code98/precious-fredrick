@@ -18,7 +18,7 @@ export default function WorksCard({ title, description, role, serviceType }: Wor
                     <Box>
                         <Text color='royalWhite'>TYPE</Text>
                         {serviceType.map((service) => (
-                            <Text color='royalWhite'>{service}</Text>
+                            <Text color='royalWhite' key={service}>{service}</Text>
                         ))}
                     </Box>
                     <Spacer />
@@ -32,7 +32,7 @@ export default function WorksCard({ title, description, role, serviceType }: Wor
                     <Text color='royalWhite' >ROLE</Text>
                     <Box mt='1rem' display='flex' justifyContent='center' flexWrap='wrap' alignItems='center' gap={4}>
                         {role.map((pos) => (
-                            <Button title={pos} />
+                            <Button title={pos} key={pos} />
                         ))}
                     </Box>
                 </Box>
