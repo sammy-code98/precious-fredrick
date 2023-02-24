@@ -12,6 +12,7 @@ const theme = extendTheme({
     secondary: "#D6D6D6",
     secondaryGrey: "#F4F4F4",
     white: "#ffffff",
+    black: "#000000",
     royalWhite: "#E6E6E6",
     royalGold: "#E8CD4F",
     royalGold1: "rgba(232, 205, 79, 0.7)",
