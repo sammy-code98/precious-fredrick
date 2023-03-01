@@ -53,7 +53,7 @@ export default function NavBar() {
         <>
             <Box
                 bg={router.asPath === href ? 'secondaryGrey' : 'primary'}
-                px={{ base: '1rem', md: '4rem' }}>
+                px={{ base: '1rem', md: '4rem' }} id='top'>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <IconButton
                         variant='outline'
