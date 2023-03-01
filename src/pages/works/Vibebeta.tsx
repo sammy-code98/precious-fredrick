@@ -28,8 +28,8 @@ export default function Vibebeta() {
                     </Box>
                     <Box>
                         <Box display='flex' py='2rem' flexWrap='wrap'>
-                            <Image src={oldVibes} alt={'old vibe image'} />
-                            <Image src={newVibes} alt={'new vibe image'} />
+                            <Image src={oldVibes} alt={'old vibe image'} loading='lazy' />
+                            <Image src={newVibes} alt={'new vibe image'} loading='lazy' />
                         </Box>
 
                         <Box mt={{ base: '1rem', md: '3rem' }} width={{ base: 'none', md: '500px' }}
@@ -45,7 +45,7 @@ export default function Vibebeta() {
                     </Box>
 
                     <Box display='flex' py='2rem' flexWrap='wrap' mt='3rem'>
-                        <Image src={vibe} alt='vibe' />
+                        <Image src={vibe} alt='vibe' loading='lazy' />
                     </Box>
 
                     <Box mt={{ base: '1rem', md: '3rem' }} width={{ base: 'none', md: '500px' }} py='2rem'
@@ -59,7 +59,7 @@ export default function Vibebeta() {
                         </Text>
                     </Box>
                     <Box py='2rem'>
-                        <Image src={musicEverday} alt='music' />
+                        <Image src={musicEverday} alt='music' loading='lazy' />
                     </Box>
                     <Box mt={{ base: '1rem', md: '2rem' }} width={{ base: 'none', md: '500px' }}
                         ml={{ base: '0', md: '56rem' }} py='2rem'
@@ -90,7 +90,7 @@ export default function Vibebeta() {
                         </Box>
                     </Box>
                     <Box py='2rem'>
-                        <Image src={mobileMusic} alt='mobileMusic' />
+                        <Image src={mobileMusic} alt='mobileMusic' loading='lazy' />
                     </Box>
 
                     <Box>

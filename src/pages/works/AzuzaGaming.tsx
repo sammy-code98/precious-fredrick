@@ -29,7 +29,7 @@ export default function AzuzaGaming() {
                             serviceType={['WEB DESIGN ', 'MOBILE DESIGN', 'BRANDING']} />
                     </Box>
                     <Box py='1rem'>
-                        <Image src={Azuza} alt='azuza' />
+                        <Image src={Azuza} alt='azuza' loading='lazy' />
                     </Box>
 
                     <Box mt={{ base: '1rem', md: '3rem' }} width={{ base: 'none', md: '500px' }}
@@ -45,7 +45,7 @@ export default function AzuzaGaming() {
                     </Box>
 
                     <Box py='4rem'>
-                        <Image src={azuzaGraphics} alt='azuza' />
+                        <Image src={azuzaGraphics} alt='azuza' loading='lazy' />
                     </Box>
                     <Box width={{ base: 'none', md: '500px' }} py='2rem'
                     >
@@ -58,7 +58,7 @@ export default function AzuzaGaming() {
                         </Text>
                     </Box>
                     <Box py='4rem'>
-                        <Image src={azuzaBg} alt='azuza' />
+                        <Image src={azuzaBg} alt='azuza' loading='lazy' />
                     </Box>
                     <Box mt='1rem' width={{ base: 'none', md: '500px' }}
                         ml={{ base: '0', md: '56rem' }} py='2rem'
@@ -87,8 +87,8 @@ export default function AzuzaGaming() {
 
                     </Box>
                     <Box py='1rem' mt='2rem' display='flex' alignItems='center' gap={2} flexWrap='wrap'>
-                        <Image src={process1} alt='azuza' />
-                        <Image src={process2} alt='azuza' />
+                        <Image src={process1} alt='azuza' loading='lazy' />
+                        <Image src={process2} alt='azuza' loading='lazy' />
 
 
                     </Box>
