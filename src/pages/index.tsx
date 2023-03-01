@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import "@fontsource/inter"
-import { Box, Text, Heading, HStack } from '@chakra-ui/react'
+import { Box, Text, Heading, HStack, Link } from '@chakra-ui/react'
 import { HomeLayout } from '@/layouts'
 import { AboutSection, HeroSection, RecentWorkSection } from '@/components/sections'
 import { Button } from '@/components/utility'
@@ -21,7 +21,7 @@ export default function Home() {
             <AboutSection />
             <RecentWorkSection />
 
-            <Box mt='4rem' py='4rem'>
+            <Box mt='4rem' py='4rem' as='section' id='contactMe'>
               <Text color='royalWhite' fontSize='xl'>CONTACT ME</Text>
               <Box display='flex' flexDirection='column' justifyContent='center' alignItems='center' py='4rem'>
                 <Button title='HAVE A PROJECT IN MIND?' />
@@ -47,7 +47,9 @@ export default function Home() {
                 <Text color='royalWhite'>04/04</Text>
               </Box>
               <Box>
+                <Link href='/#top'>
                 <Text color='royalGold'>BACK TO TOP</Text>
+                </Link>
               </Box>
             </Box>
           </Box>

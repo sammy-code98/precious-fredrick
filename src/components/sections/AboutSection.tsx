@@ -1,4 +1,4 @@
-import { Box, HStack, Text } from '@chakra-ui/react'
+import { Box, HStack, Text, Link } from '@chakra-ui/react'
 import React from 'react'
 const aboutCard = [
     {
@@ -16,7 +16,7 @@ const aboutCard = [
 ]
 export default function AboutSection() {
     return (
-        <Box mt='6rem' py='4rem'>
+        <Box mt='6rem' py='4rem' as='section' id='aboutme'>
             <Text color='royalWhite' fontSize='xl'>About</Text>
             <Box mt='2rem'
                 display='grid'
@@ -80,7 +80,9 @@ export default function AboutSection() {
                     <Text color='royalWhite'>02/04</Text>
                 </Box>
                 <Box>
+                    <Link href='/#top'>
                     <Text color='royalWhite'>BACK TO TOP</Text>
+                    </Link>
                 </Box>
 
             </Box>

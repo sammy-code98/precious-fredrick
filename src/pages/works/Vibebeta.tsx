@@ -1,7 +1,6 @@
 import React from 'react'
-import { Box, HStack, Text } from '@chakra-ui/react'
+import { Box, HStack, Text, Link } from '@chakra-ui/react'
 import { HomeLayout } from '@/layouts'
-import Link from 'next/link'
 import { WorksCard } from '@/components/utility'
 import Image from 'next/image'
 import oldVibes from "public/oldVibe.svg"

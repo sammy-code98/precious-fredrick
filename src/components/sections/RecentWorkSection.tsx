@@ -1,4 +1,4 @@
-import { Box, Text, Divider, HStack } from '@chakra-ui/react'
+import { Box, Text, Divider, HStack, Link } from '@chakra-ui/react'
 import React from 'react'
 import { Button, WorksCard, WorksCarousel } from '../utility';
 
@@ -31,7 +31,7 @@ const RecentWork = [
 
 export default function RecentWorkSection() {
     return (
-        <Box mt='4rem' py='4rem'>
+        <Box mt='4rem' py='4rem' as='section' id='recentWorks'>
             <Text color='royalWhite' fontSize='xl'>RECENT WORKS</Text>
             <Box mt='4rem'>
                 <Divider />
@@ -63,7 +63,9 @@ export default function RecentWorkSection() {
                         <Text color='royalWhite'>03/04</Text>
                     </Box>
                     <Box>
+                        <Link href='/#top'>
                         <Text color='royalGold'>BACK TO TOP</Text>
+                        </Link>
                     </Box>
                 </Box>
             </Box>
