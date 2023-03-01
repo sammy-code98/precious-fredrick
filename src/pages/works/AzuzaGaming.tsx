@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text } from '@chakra-ui/react'
+import { Box, HStack, Text } from '@chakra-ui/react'
 import { HomeLayout } from '@/layouts'
 import Link from 'next/link'
 import { WorksCard } from '@/components/utility'
@@ -8,6 +8,8 @@ import azuzaGraphics from "public/azuzaGraphics.svg"
 import azuzaBg from "public/azuzaBg.svg"
 import process1 from "public/process1.svg"
 import process2 from "public/process2.svg"
+import azuzaLogo from "public/azuzaLogo.svg"
+import designSoln from "public/designSoln.svg"
 
 import Image from 'next/image'
 
@@ -29,7 +31,7 @@ export default function AzuzaGaming() {
                             serviceType={['WEB DESIGN ', 'MOBILE DESIGN', 'BRANDING']} />
                     </Box>
                     <Box py='1rem'>
-                        <Image src={Azuza} alt='azuza' />
+                        <Image src={Azuza} alt='azuza' loading='lazy' />
                     </Box>
 
                     <Box mt={{ base: '1rem', md: '3rem' }} width={{ base: 'none', md: '500px' }}
@@ -45,7 +47,7 @@ export default function AzuzaGaming() {
                     </Box>
 
                     <Box py='4rem'>
-                        <Image src={azuzaGraphics} alt='azuza' />
+                        <Image src={azuzaGraphics} alt='azuza' loading='lazy' />
                     </Box>
                     <Box width={{ base: 'none', md: '500px' }} py='2rem'
                     >
@@ -58,7 +60,7 @@ export default function AzuzaGaming() {
                         </Text>
                     </Box>
                     <Box py='4rem'>
-                        <Image src={azuzaBg} alt='azuza' />
+                        <Image src={azuzaBg} alt='azuza' loading='lazy' />
                     </Box>
                     <Box mt='1rem' width={{ base: 'none', md: '500px' }}
                         ml={{ base: '0', md: '56rem' }} py='2rem'
@@ -87,10 +89,62 @@ export default function AzuzaGaming() {
 
                     </Box>
                     <Box py='1rem' mt='2rem' display='flex' alignItems='center' gap={2} flexWrap='wrap'>
-                        <Image src={process1} alt='azuza' />
-                        <Image src={process2} alt='azuza' />
+                        <Image src={process1} alt='azuza' loading='lazy' />
+                        <Image src={process2} alt='azuza' loading='lazy' />
+
+                    </Box>
+                    <Box py='1rem'>
+                        <Text fontSize='xl' textAlign='center'>THE LOGO</Text>
+                        <Box display='flex' mt='4rem' justifyContent='space-around' alignItems='center'>
+                            <Image src={azuzaLogo} alt='azuza' loading='lazy' />
+                            <Box width={{ base: 'none', md: '600px' }}>
+                                <Text>
+                                    The logo for Asuza was designed by our in-house graphics designer,
+                                    and I was responsible for developing the logo's use cases within the app. Through careful planning and attention to detail,
+                                    I worked to ensure that the logo was integrated seamlessly and effectively into the overall design of the platform.
+                                </Text>
+                            </Box>
+                        </Box>
+                    </Box>
+                    <Box py='2rem'>
+                        <Text>DESIGN SOLUTION</Text>
+                        <Box mt='1rem'>
+                            <Image src={designSoln} alt='azuza' loading='lazy' />
+                            <Box width={{ base: 'none', md: '600px' }} mt='3rem'>
+                                <Text>
+                                    Through a thorough brainstorming process and competitive analysis, I was able to generate design solutions for Asuza that incorporated feedback from the team. These solutions included the implementation of a campaign feature, a blog and news tab, and other features that helped to enhance the user experience and set Asuza apart in
+                                    the market. My goal was to create a platform that was intuitive, engaging, and effective for all users.
+                                </Text>
+                            </Box>
+
+                        </Box>
+
+                        <Box mt='1rem' width={{ base: 'none', md: '500px' }}
+                            ml={{ base: '0', md: '56rem' }} py='2rem'
+                        >
+                            <Text mb='0.5rem' color='black'>
+                                Gamification of the Asuza platform was a key strategy for increasing user engagement. This was achieved through the implementation of features that made it easy for regular users to host tournaments and promote them within and outside of the platform. Additionally, we introduced a reward system to increase user curiosity and drive participation. These efforts helped to make Asuza a more dynamic and engaging experience for all users.
+                            </Text>
+                        </Box>
+                    </Box>
 
 
+                    <Box>
+                        <Box display='flex' justifyContent='space-between' alignItems='center' pb='2rem'
+                            mt={{ base: '1rem', md: '8rem' }} flexWrap='wrap'>
+                            <HStack>
+                                <Text color='black' textDecoration='underline'>BEHANCE </Text>
+                                <Text color='black' textDecoration='underline'>DRIBBLE</Text>
+                                <Text color='black' textDecoration='underline'>LINKEDIN</Text>
+                            </HStack>
+                            <Box display='flex' gap={4} alignItems='center'>
+                                <Text color='black'>PREVIOUS PROJECT </Text>
+                                <Text color='black'>NEXT PROJECT </Text>
+                            </Box>
+                            <Box>
+                                <Text color='black'>BACK TO TOP</Text>
+                            </Box>
+                        </Box>
                     </Box>
                 </Box>
 
