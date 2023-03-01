@@ -1,4 +1,4 @@
-import { Box, Heading, HStack, Text } from '@chakra-ui/react'
+import { Box, Heading, HStack, Text, Link } from '@chakra-ui/react'
 import React from 'react'
 import { Button } from '../utility'
 
@@ -29,7 +29,10 @@ export default function HeroSection() {
                         Hello, I am Fred a professional digital designer. I am interested in collaborating with you on your project.
                     </Text>
                     <Box mt='2rem' display='flex' justifyContent={{ base: 'center', md: 'start' }}>
+                        <Link href='/#aboutme'>
                         <Button title='SCROLL TO DISCOVER' icon='icon' />
+
+                        </Link>
                     </Box>
                 </Box>
             </Box>
