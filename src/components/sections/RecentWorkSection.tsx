@@ -31,7 +31,7 @@ const RecentWork = [
 
 export default function RecentWorkSection() {
     return (
-        <Box mt='4rem' py='4rem'>
+        <Box mt='4rem' py='4rem' as='section' id='recentWorks'>
             <Text color='royalWhite' fontSize='xl'>RECENT WORKS</Text>
             <Box mt='4rem'>
                 <Divider />

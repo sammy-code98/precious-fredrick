@@ -21,7 +21,7 @@ export default function Home() {
             <AboutSection />
             <RecentWorkSection />
 
-            <Box mt='4rem' py='4rem'>
+            <Box mt='4rem' py='4rem' as='section' id='contactMe'>
               <Text color='royalWhite' fontSize='xl'>CONTACT ME</Text>
               <Box display='flex' flexDirection='column' justifyContent='center' alignItems='center' py='4rem'>
                 <Button title='HAVE A PROJECT IN MIND?' />

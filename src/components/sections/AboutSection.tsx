@@ -16,7 +16,7 @@ const aboutCard = [
 ]
 export default function AboutSection() {
     return (
-        <Box mt='6rem' py='4rem'>
+        <Box mt='6rem' py='4rem' as='section' id='aboutme'>
             <Text color='royalWhite' fontSize='xl'>About</Text>
             <Box mt='2rem'
                 display='grid'

@@ -14,9 +14,14 @@ import Logo from "public/logo.svg"
 import { useRouter } from 'next/router'
 
 
-const Links = ['Work', 'About', 'Contact'];
+const Links = [
+    { title: 'Work', href: '#recentWorks' },
+    { title: 'About', href: '#aboutme' },
+    { title: 'Contact', href: '#contactMe' },
 
-const NavLink = ({ children }: { children: ReactNode }) => {
+]
+
+const NavLink = ({ children, href }: { children: ReactNode, href: string }) => {
     const route = useRouter()
     const link = "/works/AzuzaGaming"
 
@@ -31,7 +36,7 @@ const NavLink = ({ children }: { children: ReactNode }) => {
         //     textDecoration: 'none',
         //     bg: useColorModeValue('gray.200', 'gray.700'),
         // }}
-        href={'#'}>
+            href={href}>
         {children}
     </Link>
 
@@ -63,8 +68,11 @@ export default function NavBar() {
                         }}
                     />
                     <HStack spacing={8} alignItems={'center'}>
+
                         <Box px={{ base: 'none', md: '2rem' }}>
-                            <Image src={Logo} alt='logo' />
+                            <Link href='/'>
+                                <Image src={Logo} alt='logo' loading='lazy' />
+                            </Link>
                         </Box>
 
                     </HStack>
@@ -74,7 +82,7 @@ export default function NavBar() {
                             spacing={4}
                             display={{ base: 'none', md: 'flex' }}>
                             {Links.map((link) => (
-                                <NavLink key={link}>{link}</NavLink>
+                                <NavLink key={link.title} href={link.href ?? '#'} >{link.title}</NavLink>
                             ))}
                         </HStack>
                     </Flex>
@@ -84,7 +92,7 @@ export default function NavBar() {
                     <Box pb={4} display={{ md: 'none' }}>
                         <Stack as={'nav'} spacing={4}>
                             {Links.map((link) => (
-                                <NavLink key={link}>{link}</NavLink>
+                                <NavLink key={link.title} href={link.href ?? '#'} >{link.title}</NavLink>
                             ))}
                         </Stack>
                     </Box>
