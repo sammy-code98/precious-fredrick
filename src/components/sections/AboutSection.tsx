@@ -1,5 +1,7 @@
 import { Box, HStack, Text, Link } from '@chakra-ui/react'
 import React from 'react'
+import Star from "public/star.svg"
+import Image from 'next/image'
 const aboutCard = [
     {
         title: 'BRANDING',
@@ -27,18 +29,22 @@ export default function AboutSection() {
                 justifyItems='center'
                 gap={{ base: '2', md: '8' }}
             >
-
                 <Box>
+                </Box>
+                <Box mt={{ base: '0.5rem', md: '2rem' }} pos='relative' >
                     <Box
-                        mt='2rem'
+                        pos='absolute'
                         width='245px'
                         height="245px"
                         borderRadius='50%'
                         background='linear-gradient(91.26deg, rgba(232, 205, 79, 0.6) 28.98%, rgba(255, 255, 255, 0.6) 58.68%)'
                         filter='blur(142.917px)'
+                        left={{ base: '4rem', md: '28rem' }}
+                        top='-10rem'
                     ></Box>
-                </Box>
-                <Box mt='2rem'>
+                    <Box ml={{ base: '0', md: '-8rem' }} display={{ base: 'none', md: 'flex' }}>
+                        <Image src={Star} alt='star' loading='lazy' />
+                    </Box>
                     <Text color='royalWhite' fontSize='2xl' px={{ base: 'none', md: '2rem' }}>
                         I am excited about the opportunity to use my passion for digital design to contribute to the development and growth of innovative projects. Solving problems through creative and user-centered design is what really gets me energized and enthusiastic.
                     </Text>
