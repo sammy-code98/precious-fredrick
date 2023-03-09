@@ -16,24 +16,27 @@ export default function WorksCard({ title, description, role, serviceType }: Wor
     const href = "/works/AzuzaGaming"
     return (
         <>
-            <Heading size='3xl' color={router.asPath === href ? 'black' : 'royalWhite'}>{title}</Heading>
-            <Box py='2rem' display='flex' justifyContent='space-between' alignItems='center' flexWrap='wrap'>
+            <Heading size={{ base: 'xl', md: '3xl' }} color={router.asPath === href ? 'black' : 'royalWhite'}>{title}</Heading>
+            <Box py='2rem'
+                px='2rem'
+                display='flex' justifyContent='space-between' alignItems='center' flexWrap='wrap'
+            >
                 <Box display='flex' flexWrap='wrap' justifyContent='space-around' gap={10} mt='2rem'>
                     <Box>
-                        <Text color={router.asPath === href ? 'black' : 'royalWhite'}>TYPE</Text>
+                        <Text color={router.asPath === href ? 'black' : 'royalGold'}>TYPE</Text>
                         {serviceType.map((service) => (
                             <Text color={router.asPath === href ? 'black' : 'royalWhite'} key={service}>{service}</Text>
                         ))}
                     </Box>
                     <Spacer />
                     <Box w={{ base: 'none', md: '400px' }} >
-                        <Text color={router.asPath === href ? 'black' : 'royalWhite'}>DESCRIPTION</Text>
+                        <Text color={router.asPath === href ? 'black' : 'royalGold'}>DESCRIPTION</Text>
                         <Text color={router.asPath === href ? 'black' : 'royalWhite'} >{description}</Text>
                     </Box>
 
                 </Box>
-                <Box pr='8rem'>
-                    <Text color={router.asPath === href ? 'black' : 'royalWhite'} >ROLE</Text>
+                <Box >
+                    <Text color={router.asPath === href ? 'black' : 'royalGold'} >ROLE</Text>
                     <Box mt='1rem' display='flex' justifyContent='center' flexWrap='wrap' alignItems='center' gap={4}>
                         {role.map((pos) => (
                             <Button
