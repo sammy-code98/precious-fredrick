@@ -21,7 +21,7 @@ export default function Home() {
             <AboutSection />
             <RecentWorkSection />
 
-            <Box mt='4rem' py='4rem' as='section' id='contactMe'>
+            <Box mt={{ base: '1rem', md: '4rem' }} py='4rem' as='section' id='contactMe'>
               <Text color='royalWhite' fontSize='xl'>CONTACT ME</Text>
               <Box display='flex' flexDirection='column' justifyContent='center' alignItems='center' py='4rem'>
                 <Button title='HAVE A PROJECT IN MIND?' />
@@ -36,19 +36,19 @@ export default function Home() {
                 <Button title='TWITTER' />
               </Box>
             </Box>
-            <Box display='flex' justifyContent='space-between' alignItems='center' pb='2rem' mt={{ base: '1rem', md: '8rem' }} flexWrap='wrap'>
-              <HStack>
-                <Text color='royalWhite' textDecoration='underline'>BEHANCE </Text>
-                <Text color='royalWhite' textDecoration='underline'>DRIBBLE</Text>
-                <Text color='royalWhite' textDecoration='underline'>INSTAGRAM</Text>
-                <Text color='royalWhite' textDecoration='underline'>LINKEDIN</Text>
-              </HStack>
+            <Box display='flex' justifyContent='space-between' alignItems='center' pb='2rem' mt={{ base: '1rem', md: '8rem' }} >
+
               <Box>
-                <Text color='royalWhite'>04/04</Text>
-              </Box>
+                <HStack>
+                <Text color='royalWhite' textDecoration='underline'>BEHANCE </Text>
+                  <Text color='royalWhite' textDecoration='underline'>DRIBBLE</Text>
+                <Text color='royalWhite' textDecoration='underline'>LINKEDIN</Text>
+                </HStack>
+              </Box> 
+
               <Box>
                 <Link href='/#top'>
-                <Text color='royalGold'>BACK TO TOP</Text>
+                  <Text color='royalGold'>BACK TO TOP</Text>
                 </Link>
               </Box>
             </Box>

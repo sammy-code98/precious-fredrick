@@ -1,6 +1,6 @@
 import { Box, Heading, HStack, Text, Link } from '@chakra-ui/react'
 import React from 'react'
-import { Button } from '../utility'
+import { ScrollButton } from '../utility'
 
 
 export default function HeroSection() {
@@ -17,11 +17,11 @@ export default function HeroSection() {
                 mt={{ base: '2rem', md: '8rem' }}
             >
                 <Box >
-                    <Heading color='royalWhite' size='4xl' noOfLines={2} lineHeight='6rem'>
+                    <Heading color='royalWhite' size={{ base: '2xl', md: '4xl' }} noOfLines={2} lineHeight='6rem'>
                         Precious Ifeanyi   Fredrick
                     </Heading>
                 </Box>
-                <Box mt={{ base: '1rem', md: '10rem' }} width={{ base: 'none', md: '500px' }}>
+                <Box mt={{ base: '4rem', md: '10rem' }} width={{ base: 'none', md: '500px' }}>
                     <Text color='royalWhite' fontSize='3xl'>
                         Digital Designer currently based in Nigeria
                     </Text>
@@ -30,25 +30,26 @@ export default function HeroSection() {
                     </Text>
                     <Box mt='2rem' display='flex' justifyContent={{ base: 'center', md: 'start' }}>
                         <Link href='/#aboutme'>
-                        <Button title='SCROLL TO DISCOVER' icon='icon' />
+                            <ScrollButton title='SCROLL TO DISCOVER' icon='icon' />
 
                         </Link>
                     </Box>
                 </Box>
             </Box>
-            <Box display='flex' justifyContent='space-between' alignItems='center' mt={{ base: '1rem', md: '8rem' }} flexWrap='wrap'>
-                <HStack>
+            <Box display={{ base: 'block', md: 'flex' }}
+                justifyContent='space-between' alignItems='center' mt={{ base: '2rem', md: '8rem' }} >
+                <HStack display={{ base: 'none', md: 'flex' }}>
                     <Text color='royalWhite' textDecoration='underline'>BEHANCE </Text>
                     <Text color='royalWhite' textDecoration='underline'>DRIBBLE</Text>
                     <Text color='royalWhite' textDecoration='underline'>INSTAGRAM</Text>
                     <Text color='royalWhite' textDecoration='underline'>LINKEDIN</Text>
 
                 </HStack>
-                <Box>
+                <Box display={{ base: 'none', md: 'flex' }}>
                     <Text color='royalWhite'>01/07</Text>
                 </Box>
-                <Box>
-                    <Text color='royalWhite'>Ⓒ 2023</Text>
+                <Box display='flex' justifyContent='flex-end'  >
+                    <Text textAlign='right' color='royalWhite'>Ⓒ 2023</Text>
                 </Box>
 
             </Box>
