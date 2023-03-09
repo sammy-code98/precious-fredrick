@@ -18,7 +18,7 @@ export default function WorksCard({ title, description, role, serviceType }: Wor
         <>
             <Heading size={{ base: 'xl', md: '3xl' }} color={router.asPath === href ? 'black' : 'royalWhite'}>{title}</Heading>
             <Box py='2rem'
-                px='2rem'
+                px={{ base: '0.5rem', md: '2rem' }}
                 display='flex' justifyContent='space-between' alignItems='center' flexWrap='wrap'
             >
                 <Box display='flex' flexWrap='wrap' justifyContent='space-around' gap={10} mt='2rem'>
@@ -35,11 +35,17 @@ export default function WorksCard({ title, description, role, serviceType }: Wor
                     </Box>
 
                 </Box>
-                <Box >
-                    <Text color={router.asPath === href ? 'black' : 'royalGold'} >ROLE</Text>
-                    <Box mt='1rem' display='flex' justifyContent='center' flexWrap='wrap' alignItems='center' gap={4}>
+                <Box mt={{ base: '2rem', md: 'none' }} >
+                    <Text color={router.asPath === href ? 'black' : 'royalWhite'}  >ROLE</Text>
+                    <Box mt='1rem'
+                        //  display='flex' justifyContent='center' flexWrap='wrap' alignItems='center' gap={4}
+                        display='grid' gridTemplateColumns='1fr 1fr 1fr'
+                        gap={2}
+
+                    >
                         {role.map((pos) => (
                             <Button
+
                                 title={pos}
                                 key={pos} />
                         ))}
