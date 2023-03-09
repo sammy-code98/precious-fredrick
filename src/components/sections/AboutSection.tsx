@@ -39,7 +39,7 @@ export default function AboutSection() {
                         borderRadius='50%'
                         background='linear-gradient(91.26deg, rgba(232, 205, 79, 0.6) 28.98%, rgba(255, 255, 255, 0.6) 58.68%)'
                         filter='blur(142.917px)'
-                        left={{ base: '4rem', md: '28rem' }}
+                        left={{ base: '5rem', md: '28rem' }}
                         top='-10rem'
                     ></Box>
                     <Box ml={{ base: '0', md: '-8rem' }} display={{ base: 'none', md: 'flex' }}>
@@ -74,7 +74,8 @@ export default function AboutSection() {
 
             </Box>
 
-            <Box display='flex' justifyContent='space-between' alignItems='center' mt={{ base: '1rem', md: '8rem' }} flexWrap='wrap'>
+            <Box display={{ base: 'none', md: 'flex' }}
+                justifyContent='space-between' alignItems='center' mt={{ base: '1rem', md: '8rem' }} flexWrap='wrap'>
                 <HStack>
                     <Text color='royalWhite' textDecoration='underline'>BEHANCE </Text>
                     <Text color='royalWhite' textDecoration='underline'>DRIBBLE</Text>

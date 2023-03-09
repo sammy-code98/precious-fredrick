@@ -52,7 +52,8 @@ export default function RecentWorkSection() {
 
             <Box>
                 <WorksCarousel />
-                <Box display='flex' justifyContent='space-between' alignItems='center' pb='2rem' mt={{ base: '1rem', md: '8rem' }} flexWrap='wrap'>
+                <Box display={{ base: 'none', md: 'flex' }}
+                    justifyContent='space-between' alignItems='center' pb='2rem' mt={{ base: '1rem', md: '8rem' }} flexWrap='wrap'>
                     <HStack>
                         <Text color='royalWhite' textDecoration='underline'>BEHANCE </Text>
                         <Text color='royalWhite' textDecoration='underline'>DRIBBLE</Text>
