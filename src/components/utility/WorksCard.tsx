@@ -1,8 +1,6 @@
 import { Box, Text, Spacer, Heading, Divider } from '@chakra-ui/react'
 import React from 'react'
 import Button from './Button'
-import { useRouter } from 'next/router'
-
 
 interface WorksCardProps {
     title: string,
@@ -12,8 +10,6 @@ interface WorksCardProps {
 }
 
 export default function WorksCard({ title, description, role, serviceType }: WorksCardProps): JSX.Element {
-    const router = useRouter()
-    const href = "/works/AzuzaGaming"
     return (
         <>
             <Heading size={{ base: 'xl', md: '3xl' }} color='royalWhite'>{title}</Heading>
@@ -44,7 +40,6 @@ export default function WorksCard({ title, description, role, serviceType }: Wor
                     >
                         {role.map((pos) => (
                             <Button
-
                                 title={pos}
                                 key={pos} />
                         ))}
