@@ -45,9 +45,7 @@ export default function HeroSection() {
                     <Text color='royalWhite' textDecoration='underline'>LINKEDIN</Text>
 
                 </HStack>
-                <Box display={{ base: 'none', md: 'flex' }}>
-                    <Text color='royalWhite'>01/07</Text>
-                </Box>
+
                 <Box display='flex' justifyContent='flex-end'  >
                     <Text textAlign='right' color='royalWhite'>Ⓒ 2023</Text>
                 </Box>

@@ -40,15 +40,15 @@ export default function Home() {
 
               <Box>
                 <HStack>
-                <Text color='royalWhite' textDecoration='underline'>BEHANCE </Text>
-                  <Text color='royalWhite' textDecoration='underline'>DRIBBLE</Text>
-                <Text color='royalWhite' textDecoration='underline'>LINKEDIN</Text>
+                  <Text color='royalWhite' fontSize={{ base: 'sm', md: 'md' }} textDecoration='underline'>BEHANCE </Text>
+                  <Text color='royalWhite' fontSize={{ base: 'sm', md: 'md' }} textDecoration='underline'>DRIBBLE</Text>
+                  <Text color='royalWhite' fontSize={{ base: 'sm', md: 'md' }} textDecoration='underline'>LINKEDIN</Text>
                 </HStack>
               </Box> 
 
               <Box>
                 <Link href='/#top'>
-                  <Text color='royalGold'>BACK TO TOP</Text>
+                  <Text fontSize={{ base: 'sm', md: 'md' }} color='royalGold'>BACK TO TOP</Text>
                 </Link>
               </Box>
             </Box>

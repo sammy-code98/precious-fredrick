@@ -60,9 +60,7 @@ export default function RecentWorkSection() {
                         <Text color='royalWhite' textDecoration='underline'>INSTAGRAM</Text>
                         <Text color='royalWhite' textDecoration='underline'>LINKEDIN</Text>
                     </HStack>
-                    <Box>
-                        <Text color='royalWhite'>03/04</Text>
-                    </Box>
+
                     <Box>
                         <Link href='/#top'>
                         <Text color='royalGold'>BACK TO TOP</Text>
