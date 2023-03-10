@@ -38,7 +38,6 @@ export default function WorksCard({ title, description, role, serviceType }: Wor
                 <Box mt={{ base: '2rem', md: 'none' }} >
                     <Text color={router.asPath === href ? 'black' : 'royalWhite'}  >ROLE</Text>
                     <Box mt='1rem'
-                        //  display='flex' justifyContent='center' flexWrap='wrap' alignItems='center' gap={4}
                         display='grid' gridTemplateColumns='1fr 1fr 1fr'
                         gap={2}
 
