@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, HStack, Text } from '@chakra-ui/react'
 import { HomeLayout } from '@/layouts'
 import Link from 'next/link'
-import { WorksCard } from '@/components/utility'
+import { ProjectDetail } from '@/components/utility'
 import Azuza from "public/azuza.svg"
 import azuzaGraphics from "public/azuzaGraphics.svg"
 import azuzaBg from "public/azuzaBg.svg"
@@ -18,14 +18,16 @@ export default function AzuzaGaming() {
     return (
         <Box bg='secondaryGrey'>
             <HomeLayout>
-                <Box mt='4rem' px='2rem'>
+                <Box mt='4rem' px={{ base: '0.2rem', md: '2rem' }}>
                     <Box display='flex' gap={6} color='black'>
-                        <Link href="#">PREVIOUS PROJECT</Link>
-                        <Link href="#">NEXT PROJECT</Link>
+                        <Link href="#">
+                            <Text as='span' fontSize={{ base: 'sm', md: 'md' }}>
+                                PREVIOUS PROJECT
+                            </Text></Link>
+                        <Link href="#"> <Text as='span' fontSize={{ base: 'sm', md: 'md' }}>NEXT PROJECT</Text></Link>
                     </Box>
                     <Box mt='2rem'>
-                        <WorksCard
-                            title={'ASUZA GAMING'}
+                        <ProjectDetail title={'ASUZA GAMING'}
                             description={'Asuza is an Esport Management platform that specializes in fostering the growth of gamers within and outside of Africa.'}
                             role={['UI DESIGN', 'UX DESIGN', 'CONCEPT']}
                             serviceType={['WEB DESIGN ', 'MOBILE DESIGN', 'BRANDING']} />
@@ -94,10 +96,10 @@ export default function AzuzaGaming() {
 
                     </Box>
                     <Box py='1rem'>
-                        <Text fontSize='xl' textAlign='center'>THE LOGO</Text>
-                        <Box display='flex' mt='4rem' justifyContent='space-around' alignItems='center'>
+                        <Text fontSize='xl' textAlign={{ base: 'left', md: 'center' }}>THE LOGO</Text>
+                        <Box display='flex' mt='4rem' justifyContent='space-around' alignItems='center' flexWrap='wrap'>
                             <Image src={azuzaLogo} alt='azuza' loading='lazy' />
-                            <Box width={{ base: 'none', md: '600px' }}>
+                            <Box width={{ base: 'none', md: '600px' }} mt='2rem'>
                                 <Text>
                                     The logo for Asuza was designed by our in-house graphics designer,
                                     and I was responsible for developing the logo's use cases within the app. Through careful planning and attention to detail,
@@ -133,16 +135,16 @@ export default function AzuzaGaming() {
                         <Box display='flex' justifyContent='space-between' alignItems='center' pb='2rem'
                             mt={{ base: '1rem', md: '8rem' }} flexWrap='wrap'>
                             <HStack>
-                                <Text color='black' textDecoration='underline'>BEHANCE </Text>
-                                <Text color='black' textDecoration='underline'>DRIBBLE</Text>
-                                <Text color='black' textDecoration='underline'>LINKEDIN</Text>
+                                <Text color='black' fontSize={{ base: 'sm', md: 'md' }} textDecoration='underline'>BEHANCE </Text>
+                                <Text color='black' fontSize={{ base: 'sm', md: 'md' }} textDecoration='underline'>DRIBBLE</Text>
+                                <Text color='black' fontSize={{ base: 'sm', md: 'md' }} textDecoration='underline'>LINKEDIN</Text>
                             </HStack>
-                            <Box display='flex' gap={4} alignItems='center'>
+                            <Box display={{ base: 'none', md: 'flex' }} gap={4} alignItems='center'>
                                 <Text color='black'>PREVIOUS PROJECT </Text>
                                 <Text color='black'>NEXT PROJECT </Text>
                             </Box>
                             <Box>
-                                <Text color='black'>BACK TO TOP</Text>
+                                <Text fontSize={{ base: 'sm', md: 'md' }} color='royalGold'>BACK TO TOP</Text>
                             </Box>
                         </Box>
                     </Box>

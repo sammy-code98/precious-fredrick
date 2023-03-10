@@ -2,29 +2,26 @@ import React from 'react'
 import { Box } from '@chakra-ui/react'
 import { ReactNode } from 'react';
 import { ArrowDownIcon } from '@chakra-ui/icons'
+import { useRouter } from 'next/router'
 
 
 interface BtnProps {
     title: string,
-    icon?: ReactNode
 }
-export default function Button({ title, icon }: BtnProps): JSX.Element {
+export default function Button({ title }: BtnProps): JSX.Element {
+    const router = useRouter()
+    const href = "/works/AzuzaGaming"
     return (
         <Box as='button'
             border='1px'
             borderRadius='2rem'
-            textColor='royalWhite'
-            borderColor='royalWhite'
-            py={{ base: '0.2rem', md: '.5rem' }}
-            px={{ base: '0.3rem', md: '1rem' }}
-
+            textColor={router.pathname === href ? 'black' : 'royalWhite'}
+            borderColor={router.pathname === href ? 'black' : 'royalWhite'}
+            py={{ base: '0.3rem', md: '.5rem' }}
+            px={{ base: '0.27rem', md: '1rem' }}
         >
             {title}
-            <Box as='span'
-            // ml='1rem'
-            >
-                {icon ? <ArrowDownIcon /> : null}
-            </Box>
+
         </Box>
     )
 }

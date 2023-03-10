@@ -39,7 +39,7 @@ export default function AboutSection() {
                         borderRadius='50%'
                         background='linear-gradient(91.26deg, rgba(232, 205, 79, 0.6) 28.98%, rgba(255, 255, 255, 0.6) 58.68%)'
                         filter='blur(142.917px)'
-                        left={{ base: '5rem', md: '28rem' }}
+                        left={{ base: '2rem', md: '28rem' }}
                         top='-10rem'
                     ></Box>
                     <Box ml={{ base: '0', md: '-8rem' }} display={{ base: 'none', md: 'flex' }}>
@@ -83,9 +83,7 @@ export default function AboutSection() {
                     <Text color='royalWhite' textDecoration='underline'>LINKEDIN</Text>
 
                 </HStack>
-                <Box>
-                    <Text color='royalWhite'>02/04</Text>
-                </Box>
+
                 <Box>
                     <Link href='/#top'>
                     <Text color='royalWhite'>BACK TO TOP</Text>

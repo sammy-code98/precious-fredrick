@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, HStack, Text, Link } from '@chakra-ui/react'
 import { HomeLayout } from '@/layouts'
-import { WorksCard } from '@/components/utility'
+import { ProjectDetail } from '@/components/utility'
 import Image from 'next/image'
 import oldVibes from "public/oldVibe.svg"
 import newVibes from "public/newVibe.svg"
@@ -13,14 +13,17 @@ export default function Vibebeta() {
     return (
         <Box bg='primary'>
             <HomeLayout>
-                <Box mt='4rem' px='2rem'>
+                <Box mt='4rem' px={{ base: '0.2rem', md: '2rem' }}>
                     <Box display='flex' gap={6} color='royalWhite'>
-                        <Link href="#">PREVIOUS PROJECT</Link>
-                        <Link href="#">NEXT PROJECT</Link>
+                        <Link href="#">
+                            <Text as='span' fontSize={{ base: 'sm', md: 'md' }}>
+                                PREVIOUS PROJECT
+                            </Text></Link>
+                        <Link href="#"> <Text as='span' fontSize={{ base: 'sm', md: 'md' }}>NEXT PROJECT</Text></Link>
                     </Box>
                     <Box mt='2rem'>
-                        <WorksCard
-                            title={'VIBE BETA'}
+
+                        <ProjectDetail title={'VIBE BETA'}
                             description={'VIBE BETA is a cutting-edge music app that helps up-and-coming talent get discovered.'}
                             role={['UI DESIGN', 'UX DESIGN', 'REDESIGN']}
                             serviceType={['WEB DESIGN ', 'MOBILE DESIGN']} />
@@ -96,16 +99,16 @@ export default function Vibebeta() {
                         <Box display='flex' justifyContent='space-between' alignItems='center' pb='2rem'
                             mt={{ base: '1rem', md: '8rem' }} flexWrap='wrap'>
                             <HStack>
-                                <Text color='royalWhite' textDecoration='underline'>BEHANCE </Text>
-                                <Text color='royalWhite' textDecoration='underline'>DRIBBLE</Text>
-                                <Text color='royalWhite' textDecoration='underline'>LINKEDIN</Text>
+                                <Text color='royalWhite' fontSize={{ base: 'sm', md: 'md' }} textDecoration='underline'>BEHANCE </Text>
+                                <Text color='royalWhite' fontSize={{ base: 'sm', md: 'md' }} textDecoration='underline'>DRIBBLE</Text>
+                                <Text color='royalWhite' fontSize={{ base: 'sm', md: 'md' }} textDecoration='underline'>LINKEDIN</Text>
                             </HStack>
-                            <Box display='flex' gap={4} alignItems='center'>
+                            <Box display={{ base: 'none', md: 'flex' }} gap={4} alignItems='center'>
                                 <Text color='royalWhite'>PREVIOUS PROJECT </Text>
                                 <Text color='royalWhite'>NEXT PROJECT </Text>
                             </Box>
                             <Box>
-                                <Text color='royalGold'>BACK TO TOP</Text>
+                                <Text color='royalGold' fontSize={{ base: 'sm', md: 'md' }}>BACK TO TOP</Text>
                             </Box>
                         </Box>
                     </Box>
